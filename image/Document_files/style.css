@@ -1,0 +1,153 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Logotype */
+
+header {
+    padding: 8px 0;
+    background-color: #222;
+}
+
+.top_wrap {
+    border-top: 1px solid #dfdfdf;
+    border-bottom: 1px solid #dfdfdf;
+}
+.top_wrap > div {
+    display: flex;
+    align-items: center;
+    height: 70px;
+    width: 80%;
+    margin: 0 auto;
+}
+.top_wrap .description {
+    flex-basis: 40%;
+    font-size: 13px;
+    color: #a9abaa;
+}
+
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Menu */
+.menu {
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-bottom: 1px solid #dfdfdf;
+} 
+.menu nav > ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 50px;
+}
+.menu nav > ul li {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    padding: 0 20px 0 0;
+    position: relative;
+}
+.menu nav > ul li:hover .submenu {
+    display: block;
+}
+.menu nav > ul li a {
+    text-decoration: none;
+    color: #000;
+    font-style: 1.25vw;
+}
+.menu .submenu {
+    display: none;
+    position: absolute;
+    top: 40px;
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 200px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+.menu .submenu li {
+    padding: 5px;
+}
+.menu .submenu li a {
+    /* text-decoration: none; */
+    color: #fff;
+}
+.menu .submenu li a:hover {
+    text-decoration: underline;
+}
+
+.menu form input {
+    border-radius: 4px;
+    bottom: 1px solid #dfdfdf;
+    outline: 0;
+    padding: 5px;
+}
+.menu form button {
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.menu img {
+    position: absolute;
+    right: 20px;
+    bottom: -5px;
+}
+
+/* Social media icons */
+
+.social-media__icons p {
+    font-size: 14px;
+    color: #757575;
+}
+.social-media__icons a {
+    color: #00a1ad;
+    margin: 0 5px;
+}
+
+/* Banner width slider */
+
+.banner .slider {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.banner .slider .arrow-left {
+    background-image: url(./images/alb.png );
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    left: 20px;
+    cursor: pointer;
+}
+.banner .slider .arrow-right {
+    background-image: url(./images/arb.png );
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
+}
+.banner .slider .photo {
+    height: 300px;
+    flex-basis: 100%;
+    background: url(./images/slider.jpg) no-repeat center bottom/cover;
+}
+.banner .slider .photo p {
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    display: inline-block;
+    padding: 10px;
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+}
